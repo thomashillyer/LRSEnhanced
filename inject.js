@@ -1,6 +1,8 @@
 const playPause = document.querySelector('.vjs-play-control');
 const volume = document.querySelector('.vjs-volume-menu-button');
 const speed = document.querySelector('.vjs-playback-rate');
+const speeds = speed.querySelectorAll('.vjs-menu-item'); //maybe better to select <li>, sume functionality
+
 
 window.addEventListener('keydown', controlVideo);
 
@@ -39,6 +41,15 @@ function controlVideo(e) {
     } else if (e.shiftKey && e.keyCode === 188) {
         //shift+<
         //decrease speed
+
+        //get current value, lookup, go to next elem
+        let currentSpeed = speed.querySelector('.vjs-playback-rate-value');
+
+        speeds.forEach((speed, index, speeds) => {
+        	if(speed.textContent == currentSpeed.textContent){
+        		(speeds[index+1] ? speeds[index+1] : speeds[0]).click();
+        	}
+        });
     } else if (e.keyCode === 77) {
         //m
         //mute
