@@ -1,4 +1,6 @@
 const playPause = document.querySelector('.vjs-play-control');
+const volume = document.querySelector('.vjs-volume-menu-button');
+const speed = document.querySelector('.vjs-playback-rate');
 
 window.addEventListener('keydown', controlVideo);
 
@@ -33,13 +35,14 @@ function controlVideo(e) {
     } else if (e.shiftKey && e.keyCode === 190) {
         //shift+>
         //increase speed
-        console.log('combo');
+        speed.click();
     } else if (e.shiftKey && e.keyCode === 188) {
         //shift+<
         //decrease speed
     } else if (e.keyCode === 77) {
         //m
         //mute
+        volume.click();
     }
 }
 
