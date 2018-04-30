@@ -4,7 +4,6 @@ window.addEventListener('keydown', controlVideo);
 
 function controlVideo(e) {
 	if(e.keyCode === 32){
-		console.log('space');
 		playPause.click();
 	}
 }
@@ -14,3 +13,6 @@ window.onkeydown = function(e) {
     e.preventDefault();
   }
 };
+
+// .d2l-frame
+// #d2l_1_12_73
