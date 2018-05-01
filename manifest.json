@@ -10,7 +10,7 @@
         "css": ["controlbox.css"],
         "all_frames": true
     }],
-    "web_accessible_resources":["inject.js", "fonts/*"],
+    "web_accessible_resources": ["inject.js", "fonts/*"],
     "browser_action":
     {
         "default_title": "Enhance LRS!"
@@ -20,4 +20,3 @@
         "http://*/*",
         "tabs"
     ]
-}
