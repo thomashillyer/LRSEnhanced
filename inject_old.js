@@ -13,61 +13,44 @@ let myVideo = videojs('video_html5_api');
 window.addEventListener('keydown', controlVideo);
 
 function controlVideo(e) {
+    //play/pause the video (space, k)
     if (e.keyCode === 32 || e.keyCode === 75) {
-
-        // space, k
-        // play/pause the video
-        myVideo.paused() ? myVideo.play() : myVideo.pause();
-
+        //playPause.click();
+         myVideo.paused() ? myVideo.play() : myVideo.pause();
     } else if (e.keyCode === 37) {
-        // left arrow
-        // go back 5 secs
-
-        myVideo.currentTime(myVideo.currentTime() - 5);
+        //left arrow
+        //go back 5 secs
     } else if (e.keyCode === 39) {
-        // right arrow
-        // go forward 5 secs
-        myVideo.currentTime(myVideo.currentTime() + 5);
-
+        //right arrow
+        //go forward 5 secs
     } else if (e.keyCode === 74) {
-        // j
-        // go back 10 secs
-        myVideo.currentTime(myVideo.currentTime() - 10);
-
+        //j
+        //go back 10 secs
     } else if (e.keyCode === 76) {
-        // l
-        // go forward 10 secs
-        myVideo.currentTime(myVideo.currentTime() + 10);
-
+        //l
+        //go forward 10 secs
     } else if (e.keyCode === 70) {
-        // f
-        // fullscreen
-        //myVideo.supportsFullscreen() ? myVideo.requestFullscreen() : myVideo.enterFullWindow();
-        myVideo.requestFullscreen();
-
+        //f
+        //fullscreen
+        myVideo.supportsFullscreen() ? myVideo.requestFullscreen() : myVideo.enterFullWindow();
     } else if (e.keyCode === 27) {
         //esc
         //leave fullscreen
-        myVideo.exitFullscreen();
-
     } else if (e.keyCode === 38) {
         //up
         //increase volume 5%
         let currVol = myVideo.volume();
         myVideo.volume(currVol + 0.05);
-
     } else if (e.keyCode === 40) {
         //down
         //decrease volume 5%
 
         let currVol = myVideo.volume();
         myVideo.volume(currVol - 0.05);
-
     } else if (e.shiftKey && e.keyCode === 190) {
         //shift+>
         //increase speed
         speed.click();
-
     } else if (e.shiftKey && e.keyCode === 188) {
         //shift+<
         //decrease speed
@@ -80,13 +63,10 @@ function controlVideo(e) {
                 (speeds[index + 1] ? speeds[index + 1] : speeds[0]).click();
             }
         });
-
     } else if (e.keyCode === 77) {
         //m
         //mute
-        //volume.click();
-        myVideo.muted(!myVideo.muted());
-
+        volume.click();
     }
 }
 
