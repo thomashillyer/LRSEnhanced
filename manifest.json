@@ -7,6 +7,7 @@
     {
         "matches": ["https://lrs.mcgill.ca/*"],
         "js": ["runner.js"],
+        "css": ["controlbox.css"],
         "all_frames": true
     }],
     "web_accessible_resources":["inject.js"],

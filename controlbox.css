@@ -1,0 +1,15 @@
+.controls-info {
+    font-family: verdana, tahoma, helvetica;
+    border: 1px solid #888;
+    border-radius: 4px;
+    margin: 5px 0px;
+    padding: 8px;
+}
+
+.controls-info span {
+    font-family: Consolas, monospace;
+    background-color: #eee;
+    padding: 3px;
+    border: 1px solid #888;
+    border-radius: 4px;
+}
