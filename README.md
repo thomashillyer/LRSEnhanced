@@ -18,7 +18,7 @@ Mute | `m`
 Decrease Volume | `down arrow`
 Increase Volume | `up arrow`
 Back 10s | `j`
-Back 5s `left arrow`
+Back 5s | `left arrow`
 Forward 5s | `right arrow`
 Forward 10s | `l`
 Fullscreen | `f`
