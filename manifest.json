@@ -3,18 +3,17 @@
     "version": "1.0.0",
     "manifest_version": 2,
     "description": "add key events to LRS",
-    "background":
+    "content_scripts": [
     {
-        "scripts": [
-            "background.js"
-        ],
-        "persistent": true
+        "matches": ["https://lrs.mcgill.ca/*"],
+        "js": ["runner.js"]
+    }],
+    "web_accessible_resources":["inject.js"],
+    "browser_action":
+    {
+        "default_title": "Enhance LRS!"
     },
-    "browser_action": {
-      "default_title": "Enhance LRS!"
-    },
-    "permissions":
-    [
+    "permissions": [
         "https://*/*",
         "http://*/*",
         "tabs"
