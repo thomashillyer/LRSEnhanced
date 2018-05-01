@@ -9,42 +9,42 @@
  window.addEventListener('keydown', controlVideo);
 
  window.onload = insertControlInfo;
+ // insertControlInfo();
 
  function insertControlInfo() {
      const infoBox = document.querySelector('#TabContainer1');
      const controlsBox = document.createElement("DIV");
 
      const controls = {
-     	playpause: `<span>space</span> / <span>k</span>`,
-     	speedup: `<span>shft</span> + <span>></span>`,
-     	speeddown: `<span>shft</span> + <span><</span>`,
-     	mute: `<span>m</span>`,
-     	ahead: `<span>right arrow</span>`,
-     	back: `<span>left arrow</span>`,
-     	ahead10: `<span>l</span>`,
-     	back10: `<span>j</span>`,
-     	fullscreen: `<span>f</span>`,
-     	exitFullscreen: `<span>esc</span>`,
-     	volumeup: `<span>up arrow</span>`,
-     	volumedown: `<span>down arrow</span>`
+         playpause: `<span>space</span> / <span>k</span>`,
+         speedup: `<span>shft</span> + <span>></span>`,
+         speeddown: `<span>shft</span> + <span><</span>`,
+         mute: `<span>m</span>`,
+         ahead: `<span>right arrow</span>`,
+         back: `<span>left arrow</span>`,
+         ahead10: `<span>l</span>`,
+         back10: `<span>j</span>`,
+         fullscreen: `<span>f</span>`,
+         exitFullscreen: `<span>esc</span>`,
+         volumeup: `<span>up arrow</span>`,
+         volumedown: `<span>down arrow</span>`
      }
 
      const template = `
-     	<div class="controls-info">
-     	<h2>LRS Enhancer</h2>
-     	<p>Play / Pause: ${controls.playpause} </p>
-     	<p>Slower: ${controls.speeddown} </p>
-     	<p>Faster: ${controls.speedup} </p>
-     	<p>Mute: ${controls.mute} </p>
-     	<p>< 10s: ${controls.back10} </p>
-     	<p>< 5s: ${controls.back} </p>
-     	<p>5s >: ${controls.ahead} </p>
-     	<p>10s >: ${controls.ahead10} </p>
-     	<p>Fullscreen: ${controls.fullscreen} </p>
-     	<p>Exit Fullscreen: ${controls.exitFullscreen} </p>
-     	<p>Volume Down: ${controls.volumedown} </p>
-     	<p>Volume Up: ${controls.volumeup} </p>
-     	</div>
+        <div class="controls-info">
+        <h3>LRS Enhancer Controls</h3>
+        <div><i class="icon-play"></i><i class="icon-pause"></i>: ${controls.playpause} </div>
+        <div><i class="icon-fast-bw"></i>: ${controls.speeddown} </div>
+        <div><i class="icon-fast-fw"></i>: ${controls.speedup} </div>
+        <div><i class="icon-volume-off"></i>: ${controls.mute} </div>
+        <div><i class="icon-volume-down"></i>: ${controls.volumedown} </div>
+        <div><i class="icon-volume-up"></i>: ${controls.volumeup} </div>
+        <div><i class="icon-resize-full-alt"></i>: ${controls.fullscreen} </div>
+        <div><i class="icon-to-start-alt"></i> 10s: ${controls.back10} </div>
+        <div><i class="icon-to-start"></i>5s: ${controls.back} </div>
+        <div>5s<i class="icon-to-end"></i>: ${controls.ahead} </div>
+        <div>10s<i class="icon-to-end-alt"></i>: ${controls.ahead10} </div>
+        </div>
      `;
 
      controlsBox.innerHTML = template;

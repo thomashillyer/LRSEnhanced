@@ -3,7 +3,50 @@
     border: 1px solid #888;
     border-radius: 4px;
     margin: 5px 0px;
-    padding: 8px;
+    padding: 0px 8px 8px;
+}
+
+.controls-info p {
+    font-size: 10pt;
+}
+
+.controls-info div {
+    display: inline-block;
+    font-size: 10pt;
+    padding: 0px 10px 5px;
+}
+
+.controls-info i {
+    font-family: "lrsenhance_icons";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
 .controls-info span {
@@ -13,3 +56,28 @@
     border: 1px solid #888;
     border-radius: 4px;
 }
+
+
+@font-face {
+    font-family: 'lrsenhance_icons';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/LRSEnhance/font/lrsenhance_icons.eot?76562971');
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/LRSEnhance/font/lrsenhance_icons.eot?76562971#iefix') format('embedded-opentype'),
+    url('chrome-extension://__MSG_@@extension_id__/fonts/LRSEnhance/font/lrenhance_icons.woff?76562971') format('woff'),
+    url('chrome-extension://__MSG_@@extension_id__/fonts/LRSEnhance/font/lrsenhance_icons.ttf?76562971') format('truetype'),
+    url('chrome-extension://__MSG_@@extension_id__/fonts/LRSEnhance/font/lrsenhance_icons.svg?76562971#lrsenhance_icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-volume-off:before { content: '\e800'; } /* '' */
+.icon-volume-down:before { content: '\e801'; } /* '' */
+.icon-volume-up:before { content: '\e802'; } /* '' */
+.icon-to-start:before { content: '\e803'; } /* '' */
+.icon-to-start-alt:before { content: '\e804'; } /* '' */
+.icon-to-end-alt:before { content: '\e805'; } /* '' */
+.icon-to-end:before { content: '\e806'; } /* '' */
+.icon-pause:before { content: '\e807'; } /* '' */
+.icon-play:before { content: '\e808'; } /* '' */
+.icon-fast-fw:before { content: '\e809'; } /* '' */
+.icon-fast-bw:before { content: '\e80a'; } /* '' */
+.icon-resize-full-alt:before { content: '\f0b2'; } /* '' */
