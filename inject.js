@@ -1,29 +1,24 @@
-const playPause = document.querySelector('.vjs-play-control');
-const volume = document.querySelector('.vjs-volume-menu-button');
+ const playPause = document.querySelector('.vjs-play-control');
+// const volume = document.querySelector('.vjs-volume-menu-button');
 const speed = document.querySelector('.vjs-playback-rate');
 const speeds = speed.querySelectorAll('.vjs-menu-item'); //maybe better to select <li>, sume functionality
 
-//https://stackoverflow.com/questions/39935764/chrome-extension-content-script-app-is-not-defined-on-ember-site/39938062#39938062
-//this version is currently hacky but with the above link it could work
-
-//let myVideo = document.getElementsByTagName('video')[0];
-let myVideo = videojs('video_html5_api');
-// let myVideo = document.querySelector('.video-js');
+const myVideo = videojs('video_html5_api');
 
 window.addEventListener('keydown', controlVideo);
 
 function controlVideo(e) {
     if (e.keyCode === 32 || e.keyCode === 75) {
-
         // space, k
         // play/pause the video
+        playPause.blur();
         myVideo.paused() ? myVideo.play() : myVideo.pause();
 
     } else if (e.keyCode === 37) {
         // left arrow
         // go back 5 secs
-
         myVideo.currentTime(myVideo.currentTime() - 5);
+
     } else if (e.keyCode === 39) {
         // right arrow
         // go forward 5 secs
@@ -53,20 +48,22 @@ function controlVideo(e) {
     } else if (e.keyCode === 38) {
         //up
         //increase volume 5%
-        let currVol = myVideo.volume();
-        myVideo.volume(currVol + 0.05);
+        myVideo.volume(myVideo.volume() + 0.05);
 
     } else if (e.keyCode === 40) {
         //down
         //decrease volume 5%
-
-        let currVol = myVideo.volume();
-        myVideo.volume(currVol - 0.05);
+        myVideo.volume(myVideo.volume() - 0.05);
 
     } else if (e.shiftKey && e.keyCode === 190) {
         //shift+>
         //increase speed
         speed.click();
+
+        // future way should implement an input selector to allow more fine tuning
+        // let speeds[] = [0.5, 1, 1.3, 1.5, 1.7, 2];
+        //let newSpeed = speeds[i];
+        //myVideo.playbackRate(1.6);
 
     } else if (e.shiftKey && e.keyCode === 188) {
         //shift+<
@@ -75,6 +72,7 @@ function controlVideo(e) {
         //get current value, lookup, go to next elem
         let currentSpeed = speed.querySelector('.vjs-playback-rate-value');
 
+        // this is a terrible way to do this but it works
         speeds.forEach((speed, index, speeds) => {
             if (speed.textContent == currentSpeed.textContent) {
                 (speeds[index + 1] ? speeds[index + 1] : speeds[0]).click();
@@ -96,7 +94,3 @@ window.onkeydown = function(e) {
         e.preventDefault();
     }
 };
-
-//iframe id/class
-// .d2l-frame
-// #d2l_1_12_73
