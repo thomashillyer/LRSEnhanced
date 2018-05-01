@@ -2,7 +2,7 @@
     "name": "LRS Enhancer",
     "version": "1.0.0",
     "manifest_version": 2,
-    "description": "add key events to LRS",
+    "description": "Add keyboard shortcuts to McGill Lecture Recording System",
     "content_scripts": [
     {
         "matches": ["https://lrs.mcgill.ca/*"],
