@@ -32,18 +32,46 @@
 
      const template = `
         <div class="controls-info">
-        <h3>LRS Enhancer Controls</h3>
-        <div><i class="icon-play"></i><i class="icon-pause"></i>: ${controls.playpause} </div>
-        <div><i class="icon-fast-bw"></i>: ${controls.speeddown} </div>
-        <div><i class="icon-fast-fw"></i>: ${controls.speedup} </div>
-        <div><i class="icon-volume-off"></i>: ${controls.mute} </div>
-        <div><i class="icon-volume-down"></i>: ${controls.volumedown} </div>
-        <div><i class="icon-volume-up"></i>: ${controls.volumeup} </div>
-        <div><i class="icon-resize-full-alt"></i>: ${controls.fullscreen} </div>
-        <div><i class="icon-to-start-alt"></i> 10s: ${controls.back10} </div>
-        <div><i class="icon-to-start"></i>5s: ${controls.back} </div>
-        <div>5s<i class="icon-to-end"></i>: ${controls.ahead} </div>
-        <div>10s<i class="icon-to-end-alt"></i>: ${controls.ahead10} </div>
+            <h3>LRS Enhancer Controls</h3>
+            <table>
+                <tr>
+                <td>
+                <div><i class="icon-play"></i><i class="icon-pause"></i>: ${controls.playpause} </div>
+                </td>
+                <td>
+                <div><i class="icon-fast-bw"></i>: ${controls.speeddown} </div>
+                </td>
+                <td>
+                <div><i class="icon-fast-fw"></i>: ${controls.speedup} </div>
+                </td>
+                <td>
+                <div><i class="icon-volume-off"></i>: ${controls.mute} </div>
+                </td>
+                <td>
+                <div><i class="icon-volume-down"></i>: ${controls.volumedown} </div>
+                </td>
+                <td>
+                <div><i class="icon-volume-up"></i>: ${controls.volumeup} </div>
+                </td>
+                <td>
+                <div><i class="icon-resize-full-alt"></i>: ${controls.fullscreen} </div>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <div><i class="icon-to-start-alt"></i> 10s: ${controls.back10} </div>
+                </td>
+                <td>
+                <div><i class="icon-to-start"></i>5s: ${controls.back} </div>
+                </td>
+                <td>
+                <div>5s<i class="icon-to-end"></i>: ${controls.ahead} </div>
+                </td>
+                <td>
+                <div>10s<i class="icon-to-end-alt"></i>: ${controls.ahead10} </div>
+                </td>
+                </tr>
+            </table>
         </div>
      `;
 
