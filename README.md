@@ -1,4 +1,4 @@
-# LRS Enhanced
+# [Logo](logo128.png) LRS Enhanced
 Chrome extension keyboard shortcuts for the [McGill Lecture Recording System](http://lrs.mcgill.ca). (Also works on myCourses)
 
 >I hate lecture recordings and I definitely hate the McGill lecture recording system, but I **love** keyboard shortcuts. 
