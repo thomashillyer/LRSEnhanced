@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -17,7 +18,16 @@
    inkscape:version="0.92.3 (3ce5693, 2018-03-11)"
    sodipodi:docname="logo.svg">
   <defs
-     id="defs2" />
+     id="defs2">
+    <linearGradient
+       id="linearGradient4718"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4716" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -43,7 +53,8 @@
      gridtolerance="10000">
     <inkscape:grid
        type="xygrid"
-       id="grid4696" />
+       id="grid4696"
+       visible="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -83,5 +94,24 @@
        height="271.19791"
        x="0"
        y="25.802067" />
+    <rect
+       style="fill:#cccccc;fill-opacity:1;stroke:#746b6b;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4714"
+       width="145.52083"
+       height="74.083336"
+       x="116.41666"
+       y="215.87865"
+       ry="13.558" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="127.51807"
+       y="273.32507"
+       id="text4712"><tspan
+         sodipodi:role="line"
+         id="tspan4710"
+         x="127.51807"
+         y="273.32507"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:63.5px;line-height:1.25;font-family:'Bitstream Charter';-inkscape-font-specification:'Bitstream Charter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:7.9375px;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">LRS</tspan></text>
   </g>
 </svg>
